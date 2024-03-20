@@ -27,7 +27,8 @@ html {
     --filter-bg-color: #DEEBFF;
     --font-size-small: 1rem; /* CHA AJOUT FSS 16px **/
     --font-size-medium: 1.125rem; /* CHA AJOUT FSM 18px **/
-    --max-width: 90rem; /* CHA AJOUT MX 1140px **/
+    --max-width: 90em; /* CHA AJOUT MX 1140px **/
+    --min-width: 64em; /* CHA AJOUT MX 1024px **/
    }
 
 .fa-solid {
@@ -65,6 +66,7 @@ a { /* CHA Lien par defaut */
 
 ul {
     list-style-type: none; /* CHA AJOUT : élément ul pour retirer la puce de la liste */
+    padding-left: 0;
 }
 
 img { /* CHA AJOUT pour s'adapter à toutes les tailles d'écrans */
@@ -96,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card img {
-    object-fit: cover;
+    object-fit: cover; 
 }
 
 .card-title {
@@ -119,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
    }
 
 .site-header img {  
-    width: 61px;
+    width: 23%;
     max-width: 100%;
     height: auto;
     margin: 30px 50px; 
@@ -295,7 +297,7 @@ ul.nav-links {
     align-items: center;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
-    width: 24px;
+    width: 24px; 
     height: 24px;
 }
 
@@ -494,6 +496,7 @@ ul.nav-links {
     justify-content: center;
     justify-content: space-between;
     margin: 30px 50px 30px 50px;
+    padding: 20px ;
 }
 
 .site-footer h2 {
