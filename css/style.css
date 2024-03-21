@@ -496,7 +496,11 @@ ul.nav-links {
     justify-content: center;
     justify-content: space-between;
     margin: 30px 50px 30px 50px;
-    padding: 20px ;
+    }
+
+.site-footer>* { /* * applique un style à tous les enfants direct d'un élément */
+    flex: 1; /* Flexbox pour que chaque élément enfant direct prenne autant d'espace disponible que possible dans le conteneur parent en répartissant de manière équitable entre les enfants également */
+    padding: 20px;
 }
 
 .site-footer h2 {
