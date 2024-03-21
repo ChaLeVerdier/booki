@@ -7,8 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: solid 1px gray ; */
-    /* Border à retirer a la fin */
 }
 
     /********** GENERAL ***********/
@@ -46,26 +44,23 @@ html {
 body {
     display: flex;
     justify-content: center;
-    /* CHA QUESTION : Ajouter min-height: 100vh; Pour s'adapter à toutes les tailles d'écrans (sorte de responsive) viewport-height? */
-    }
+}
 
     
 .main-container {
     width: 100%;
-    /* max-width: 1440px; */ /* CHA CORRECTION - largeur max 1140px remplacer par var(--max-widht) pour contraindre une largeur max*/
-    max-width: var(--max-width);
+     max-width: var(--max-width); /* CHA CORRECTION - largeur max 1140px remplacer par var(--max-widht) */
     padding: 0; /* CHA CORRECTION PADDING */
     box-sizing: border-box;
-    }
+}
 
 a { /* CHA Lien par defaut */
     color: inherit; 
-    /* <Inerit> sert à hériter de la couleur du parent ; #000000 les color en noir */
     text-decoration: none;
 }
 
 ul {
-    list-style-type: none; /* CHA AJOUT : élément ul pour retirer la puce de la liste */
+    list-style-type: none; /* CHA AJOUT : pour retirer la puce des éléments ul */
     padding-left: 0;
 }
 
@@ -85,8 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-main { 
-    padding: 0 50px; /* CHA AJOUT */
-        /* Ajout de "site-main" avec un padding pour toutes les marges de coté - plus logique ici que dans main-conteneur */
+    padding: 0 50px; /* CHA AJOUT pour toutes les marges de coté - plus logique ici que dans main-conteneur */
  }
 
 .card {
@@ -114,9 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-header {
     display:flex;
-    /* height: 79px;  CHA AJOUT de hauteur : mais necessaire ? */
     justify-content: space-between;
-    /* justify-content: flex-start; */ /*CHA CORRECTION la 2e écraserait la première donc c'est soit l'un soit l'autre*/
     margin-bottom: 30px; /* CHA AJOUT de GAP : necessaire ici ? */
    }
 
@@ -126,13 +118,11 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
     margin: 30px 50px; 
     box-shadow: 0px 5px 9px 0px #00000030; /* CHA AJOUT : ombre sur le logo */
-    cursor: pointer; /* CHA QUESTION : comment faire pour le curseur pointe uniquement sur le logo ?*/
-}
+    cursor: pointer; }
 
 .header-nav {
     padding: 0 50px; 
     text-shadow: 0px 4px 3px rgb(0 0 0 / 21%);
-        /* CHA AJOUT pour ombre textes uniquement */
 }
 
 .header-links {
@@ -163,7 +153,6 @@ ul.nav-links {
 
 /* *********** SECTION INFO GROUP *********** */
 
-/* CHA COMMENTAIRES : toute la section info-group est à construire */
 
 .info-group {
     display:flex;
@@ -204,9 +193,7 @@ ul.nav-links {
 
 .destination { /* CHA AJOUT : pour faire une bordeur autour de destination */
     border-top: 1px solid var(--main-bg-color);
-    /* Bordure de 1 pixel en haut */
     border-bottom: 1px solid var(--main-bg-color);
-    /* Bordure de 1 pixel en bas */
     }
 
 .destination input {
@@ -307,6 +294,7 @@ ul.nav-links {
 
 
 /******  SECTION HEBERGEMENTS AND POPULAIRES ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -349,7 +337,6 @@ ul.nav-links {
     flex-basis: calc(33.33% - 15px);
     margin-top: 33px;
 }
-
 
 .hebergements-cards .card img {
     width: 100%;
@@ -436,6 +423,8 @@ ul.nav-links {
 
 
 /**************** SECTION ACTIVITE ******************/
+
+
 .activites {
     display: flex;
     flex-direction: column;
@@ -487,6 +476,7 @@ ul.nav-links {
     color: #000000;
 }
 
+
 /**************** FOOTER ******************/
 
 .site-footer {
@@ -498,8 +488,8 @@ ul.nav-links {
     margin: 30px 50px 30px 50px;
     }
 
-.site-footer>* { /* * applique un style à tous les enfants direct d'un élément */
-    flex: 1; /* Flexbox pour que chaque élément enfant direct prenne autant d'espace disponible que possible dans le conteneur parent en répartissant de manière équitable entre les enfants également */
+.site-footer>* { 
+    flex: 1;
     padding: 20px;
 }
 
@@ -514,44 +504,3 @@ ul.nav-links {
     gap: 15px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-}
-
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
