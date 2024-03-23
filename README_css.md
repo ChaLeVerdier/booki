@@ -35,6 +35,8 @@ Valeur couramment utilisée pour les éléments qui ont un contenu variable ou d
 
 <rating> est souvent utilisé pour désigner une classe ou un élément HTML qui représente une évaluation ou une note attribuée à un produit, un service ou toute autre entité.
 
+<flex-basis: calc (33.33% - 15px)> : spécifie la taille de base de l'élément avant que les ajustements nécessaires pour l'agrandir ou le rétrécir ne soient appliqués en fonction des autres propriétés comme Flex Grow et Flex Shrink. ici on utilise la fonction calc pour dire que "Hébergement" est divisé par 3 soit 100%/3 = 33.33 % et les cards séparées de 15px.
+
 <Etude du code pour le footer > 
 .site-footer>* { 
     flex: 1; 
@@ -45,10 +47,11 @@ Valeur couramment utilisée pour les éléments qui ont un contenu variable ou d
 
 <kebab-case> est une convention de nommage des variables, identifiants de classe, noms de fichiers... Cette convention veut que les mots soient en minuscules et séparés par des tirets. Cela rend le code plus lisible et plus cohérent.
 
-            ************** QUESTIONS css **************
+<rem (Root EM) ou em > : L'unité <rem> est basée sur la taille de la police de l'élément racine (<html>) et <em> est basée sur la taille de la police de l'élément (<parent direct>).
+Par exemple, si la taille de la police de l'élément racine ou de l'élément parent est définie à 16 pixels, alors 1rem ou 1em équivaut à 16 pixels.  
+En général, l'utilisation de rem est souvent préférée pour les tailles de police, car elle offre un meilleur contrôle sur la taille de la police à différents niveaux de l'arborescence DOM, en particulier lorsque vous travaillez sur des designs responsifs.
 
-Pour Stéphane :
-Dans Body : Pretinant d'ajouter "min-height = 100%" pour qu'il s'adapte à tous les écran ou pas necessaire ?
+            ************** QUESTIONS css **************
 
 font-size : Mieux en "rem" ? s'adapte mieux à tout type d'écran, surtout pour l'accessibilité _/
 /_ ou font-size: 1.37rem; soit 16px = 1rem \*/

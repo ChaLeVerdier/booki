@@ -2,7 +2,7 @@
 
             ************** GLOSSAIRE html **************
 
-- <aria"-labels> : "Accessible Rich Internet Applications" définit un ensemble d'attributs pour améliorer la sémantique des éléments HTML et fournir des informations supplémentaires aux technologies d'assistance.
+- <aria"-labels"> : "Accessible Rich Internet Applications" définit un ensemble d'attributs pour améliorer la sémantique des éléments HTML et fournir des informations supplémentaires aux technologies d'assistance.
 
 Le <span> est utilisé pour encapsuler un élément. Les balises <span> sont des éléments en ligne qui sont généralement utilisés pour appliquer des styles spécifiques à une partie du contenu sans changer la structure du document.
 
@@ -12,7 +12,9 @@ L'attribut <aria-hidden> est utilisé pour indiquer aux technologies d'assistanc
 
 Pour le HEADER :
 
-Ajout d'une liste avec attributs "ul" et "il" puis d'un lien "a" pour ancré un élément dans la page.
+Pour le logo reviendra à la page d'accueil grace à : ./ (exp : <a href="./" title="Logo du site">)
+
+Ajout d'une liste avec attributs "ul" et "li" puis d'un lien "a" pour ancrer un élément dans la page.
 
 <nav>
     <a href="#hebergement-a-marseille">Hébergement</a> 
@@ -27,13 +29,6 @@ Pour le FORMULAIRE :
     <a href="#">Recherche</a>
 </section>
 
-            ************** QUESTIONS html **************
-
-Pour le lien AFFICHER PLUS
-
-- Ajout du lien cliquable
-- Ajout de strong pour du gras (comment le faire en CSS ?)
-
             ************** CHECK LIST html **************
 
 - Fichier CSS relié : ok
@@ -41,21 +36,26 @@ Pour le lien AFFICHER PLUS
 - Header : revoir avec l'attribut nav : ok
 
   - # pour simuler présence du lien : ok
+    - et pour créer une ancre dans la page.
 
-- Section Recherche et filtre : en cours
+les "id" sont plus important que les "class" donc placé en prio : <section id="hebergements" class="hebergements" > en raison de leur spécificité élevée, de leur unicité et de leur priorité dans l'application des styles.
+
+- Section Recherche et filtre : ok
 
   - Ajout du titre H1 + paragraphe p : ok
-  - Intégrer un formulaire Recherche : en cours
-  - Intégrer un formulaire Filtre : en cours
+  - Intégrer un formulaire Recherche : ok avec "form" et flexbox
+  - Intégrer un formulaire Filtre : ok avec une liste et flexbox
 
-- Section Hébergements Populaires Activités : en cours
+- Section Hébergements Populaires Activités : ok
+  Hébergement et populaire : Avec div et non section pour éviter d'avoir à ajouter un titre (W3C).
 
-  - Intégrer section "Hébergements" : en cours
+  - Intégrer section "Hébergements" : ok
     - Ajouter les "6 cards" en s'appuyant sur celles de "Populaires" : ok
     - Changer les images "img src" : ok
     - Changer les titres, textes et prix avec div class="card-content" ; "card-txt" ; "card-title" ; "card subtitle" ; "card-rating" (étoile : fa) : ok
-  - Intégrer section "Populaires" : en cours
-  - Intégrer section "Activités" : en cours
+    - Utilisation du CSS clac pour obtenir les gap entre les cards
+  - Intégrer section "Populaires" : ok (déjà fourni)
+  - Intégrer section "Activités" : ok
 
-- Section Footer : A faire
-  - Intégrer section "Footer" : A faire
+- Section Footer : ok
+  - Intégrer section "Footer" : ok

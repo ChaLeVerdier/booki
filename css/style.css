@@ -25,8 +25,8 @@ html {
     --filter-bg-color: #DEEBFF;
     --font-size-small: 1rem; /* CHA AJOUT FSS 16px **/
     --font-size-medium: 1.125rem; /* CHA AJOUT FSM 18px **/
-    --max-width: 90em; /* CHA AJOUT MX 1140px **/
-    --min-width: 64em; /* CHA AJOUT MX 1024px **/
+    --max-width: 90rem; /* CHA AJOUT MX 1140px **/
+    --min-width: 64rem; /* CHA AJOUT MX 1024px **/
    }
 
 .fa-solid {
@@ -69,9 +69,6 @@ img { /* CHA AJOUT pour s'adapter à toutes les tailles d'écrans */
     height: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0; /* CHA RESET */
-}
 
 .section-title { /* Titres h1 et h2 de la page */
     margin: 0; 
@@ -176,7 +173,10 @@ ul.nav-links {
     min-height: 50px;/* CHA AJOUT MIN à Height pour faire apparaitre la bordeur */
     max-width: 400px;
     background: var(--white, #FFFFFF);
-    overflow: hidden;
+}
+
+.search-bar .fa-solid {
+    color: black; /* CHA AJOUT : pour rendre le logo noir */
 }
 
 .location {
@@ -186,10 +186,6 @@ ul.nav-links {
     height: 50px;
     cursor: pointer;
 }
-
-.search-bar .fa-solid {
-    color: black; /* CHA AJOUT : pour rendre le logo noir */
-    }
 
 .destination { /* CHA AJOUT : pour faire une bordeur autour de destination */
     border-top: 1px solid var(--main-bg-color);
